@@ -58,8 +58,8 @@ const Header = ({ pop, close, isConnected }) => {
           <Header__hero>
             <Hero__wrapper>
               <h1>
-                We are currently giving out $1,000,000 worth of $VAST as airdrop
-                to prospect users.
+                We are currently giving out $10,000,000 worth of $VAST as
+                airdrop to prospect users.
               </h1>
               <div className="hero__btn">
                 {isConnected && (
