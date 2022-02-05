@@ -13,7 +13,7 @@ export const Header_wrapper = styled.header`
   button {
     font-weight: 600;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     height: 100%;
   }
 `;
@@ -45,11 +45,21 @@ export const Header__hero = styled.div`
   align-items: center;
   text-align: center;
   display: flex;
+  color: #eee;
   height: calc(100vh - 80px);
 
-  @media screen and (max-width: 768px) {
-    height: 80vh;
+  @media screen and (max-width: 800px) {
+    height: 50vh;
     padding-bottom: 50px;
+  }
+  @media screen and (max-width: 414px) {
+    height: 50vh;
+  }
+  @media screen and (max-width: 375px) {
+    height: 50vh;
+  }
+  @media screen and (max-width: 320px) {
+    height: 100%;
   }
 `;
 export const Hero__wrapper = styled.div`
@@ -58,7 +68,7 @@ export const Hero__wrapper = styled.div`
   text-align: center;
   flex-direction: column;
   width: 100%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     padding: 0px 20px;
   }
   h1 {
@@ -66,11 +76,26 @@ export const Hero__wrapper = styled.div`
     max-width: 80rem;
     line-height: 5.8rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
       font-size: 35px;
       text-align: left;
       max-width: 100%;
-      line-height: 4.5rem;
+      line-height: 4rem;
+    }
+    @media screen and (max-width: 414px) {
+      font-size: 24px;
+      line-height: 1.5em;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 20px;
+      line-height: 1.5em;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 20px;
+      line-height: 1.5em;
+      margin-top: 40px;
     }
   }
 
@@ -86,9 +111,14 @@ export const Hero__wrapper = styled.div`
     button {
       margin: 0 10px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
       text-align: left;
       justify-content: left;
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
     }
   }
 `;

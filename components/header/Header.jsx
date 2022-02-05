@@ -12,12 +12,13 @@ import Button from '../Button';
 import useTokenContract from '../../hooks/useTokenContract';
 import { useAddress, useSigner } from '../../state/hooks';
 import { parseUnits } from 'ethers/lib/utils';
+import Image from 'next/image';
 const Header = ({ pop, close, isConnected }) => {
   const { claim, refer } = useTokenContract();
 
-  const registerAsRef = async () => {
-    await refer();
-  };
+  // const registerAsRef = async () => {
+  //   await refer();
+  // };
   const airdrop = async () => {
     await claim();
   };
@@ -27,7 +28,7 @@ const Header = ({ pop, close, isConnected }) => {
         <Container>
           <Header__top>
             <Header__logo>
-              <h1>VAST</h1>
+              <Image src="/vast.webp" alt="vast" width={100} height={25} />
             </Header__logo>
             <Header__right>
               {/* <nav>
@@ -61,31 +62,14 @@ const Header = ({ pop, close, isConnected }) => {
                 to prospect users.
               </h1>
               <div className="hero__btn">
-                {!isConnected ? (
+                {isConnected && (
                   <Button
-                    label="Connect wallet"
+                    label="claim Airdrop"
                     hoverBg="#051937"
                     bgColor="#0078D4"
                     hoverColor="#0078D4"
-                    onClick={pop}
+                    onClick={airdrop}
                   />
-                ) : (
-                  <>
-                    <Button
-                      label="claim free airdrop"
-                      hoverBg="#051937"
-                      bgColor="#0078D4"
-                      hoverColor="#0078D4"
-                      onClick={airdrop}
-                    />
-                    <Button
-                      label="Get your referral link"
-                      hoverBg="#051937"
-                      bgColor="#0078D4"
-                      hoverColor="#0078D4"
-                      onClick={registerAsRef}
-                    />
-                  </>
                 )}
               </div>
             </Hero__wrapper>

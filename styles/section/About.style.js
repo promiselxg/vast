@@ -9,7 +9,7 @@ export const About__wrapper = styled.section`
   @media screen and (max-width: 820px) {
     height: 100%;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     height: 100%;
   }
 `;
@@ -33,7 +33,7 @@ export const About__container = styled.div`
       transform: translate(-240px, 20px);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
       display: none;
     }
   }
@@ -43,7 +43,7 @@ export const About__container = styled.div`
     padding: 40px 30px;
     height: 100%;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     flex-direction: column;
     padding: 40px 20px;
   }
@@ -76,7 +76,7 @@ export const About__left = styled.div`
     @media screen and (max-width: 820px) {
       display: none;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
       margin-top: 20px;
       margin-bottom: 30px;
     }
@@ -88,7 +88,7 @@ export const About__right = styled.div`
     display: flex;
     margin-top: 40px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     display: flex;
   }
 `;
@@ -136,7 +136,7 @@ export const About__content = styled.div`
         top: 0;
         margin-left: 0px;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 800px) {
         position: relative;
         top: 0;
         margin-left: 0px;
@@ -145,7 +145,7 @@ export const About__content = styled.div`
 
     p {
       margin-bottom: 10px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 800px) {
         font-size: 16px;
         line-height: 2em;
       }
@@ -154,7 +154,7 @@ export const About__content = styled.div`
       width: 100%;
       margin-bottom: 20px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
       width: 100%;
       margin-bottom: 20px;
     }

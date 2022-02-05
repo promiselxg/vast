@@ -42,7 +42,7 @@ const Home = () => {
 
   const getChainId = async (provider) => {
     const chainId = await provider.request({ method: 'eth_chainId' });
-    return chainId;
+    return +chainId;
   };
 
   const connect = async () => {
@@ -54,14 +54,14 @@ const Home = () => {
     const provider = await web3Modal.connect();
     if (web3Modal.cachedProvider === 'walletconnect') {
       const chainId = await getChainId(provider);
-      if (+chainId !== default_chain) {
+      if (+chainId !== +default_chain) {
         web3Modal.clearCachedProvider();
         alert('Disconnect Wallet Connect and switch to Smart Chain network.');
         return false;
       }
     } else {
       const chainId = await getChainId(provider);
-      if (+chainId !== default_chain) {
+      if (+chainId !== +default_chain) {
         setupNetwork(provider);
       }
     }
