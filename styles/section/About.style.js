@@ -90,23 +90,42 @@ export const About__left = styled.div`
     .info {
       margin-bottom: 10px;
       margin-left: 10px;
+      @media screen and (max-width: 800px) {
+        line-height: 2rem;
+      }
       span:first-child {
         font-size: 12px;
         font-weight: 800;
         opacity: 0.8;
+        @media screen and (max-width: 800px) {
+          font-size: 14px;
+        }
       }
       span:last-child {
         font-size: 14px;
         font-weight: 800;
         color: var(--blue-bg);
+        word-wrap: break-word;
+        @media screen and (max-width: 800px) {
+          font-size: 18px;
+          font-weight: 600;
+        }
       }
     }
-    @media screen and (max-width: 820px) {
-      display: none;
-    }
+
     @media screen and (max-width: 800px) {
       margin-top: 20px;
       margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    padding: 0 10px;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 800;
     }
   }
 `;
