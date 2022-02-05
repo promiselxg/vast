@@ -6,14 +6,14 @@ import {
   About__right,
   About__wrapper,
 } from '../../styles/section/About.style';
-import NavLink from '../NavLink';
-import {
-  FiFacebook,
-  FiTwitter,
-  FiLinkedin,
-  FiInstagram,
-  FiMail,
-} from 'react-icons/fi';
+// import NavLink from '../NavLink';
+// import {
+//   FiFacebook,
+//   FiTwitter,
+//   FiLinkedin,
+//   FiInstagram,
+//   FiMail,
+// } from 'react-icons/fi';
 
 const About = () => {
   return (
@@ -32,11 +32,32 @@ const About = () => {
                 We also welcome help in moderating our communities.
               </p>
               <div className="About__Icons">
-                <NavLink to="/" icon={<FiFacebook />} />
+                {/* <NavLink to="/" icon={<FiFacebook />} />
                 <NavLink to="/" icon={<FiTwitter />} />
                 <NavLink to="/" icon={<FiLinkedin />} />
                 <NavLink to="/" icon={<FiInstagram />} />
-                <NavLink to="/" icon={<FiMail />} />
+                <NavLink to="/" icon={<FiMail />} /> */}
+                <h1>Tokenomics</h1>
+                <div className="info">
+                  <span>Token Name : </span>
+                  <span>Vast</span>
+                </div>
+                <div className="info">
+                  <span>Token Symbol : </span>
+                  <span>Vast</span>
+                </div>
+                <div className="info">
+                  <span>Token decimal : </span>
+                  <span>18</span>
+                </div>
+                <div className="info">
+                  <span>Contract Address : </span>
+                  <span>0x6F2fEBE1249AD8Ef1fF52E891D784910597543e6</span>
+                </div>
+                <div className="info">
+                  <span>Total Supply : </span>
+                  <span>210,000,000,000 VAST</span>
+                </div>
               </div>
             </About__left>
             <About__right>
@@ -52,15 +73,15 @@ const About = () => {
                   <h1>Rewards Holding</h1>
                   <p>
                     4% of each transaction is redistributed to token holders.
-                    That means you earn more Terkehh by just holding them in
-                    your wallet.
+                    That means you earn more Vast by just holding them in your
+                    wallet.
                   </p>
                 </div>
                 <div className="desc">
                   <h1>Locked Liquidty</h1>
                   <p>
-                    Unruggable, majority of LP tokens locked & some burned so
-                    theres always LP.
+                    Unruggable, majority of LP tokens locked &amp; some burned
+                    so theres always LP.
                   </p>
                 </div>
               </About__content>

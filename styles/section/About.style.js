@@ -5,6 +5,13 @@ export const About__wrapper = styled.section`
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  /* background: linear-gradient(
+    -30deg,
+    #03a9f4 0%,
+    #3a78b7 50%,
+    #262626 50%,
+    #607d8b 100%
+  ); */
 
   @media screen and (max-width: 820px) {
     height: 100%;
@@ -53,16 +60,18 @@ export const About__left = styled.div`
   z-index: 5;
   h1 {
     font-size: 50px;
+    opacity: 0.7;
   }
   p {
     font-size: 16px;
     max-width: 48rem;
+    opacity: 0.8;
     line-height: 30px;
   }
   .About__Icons {
     margin-top: 20px;
     display: flex;
-
+    flex-direction: column;
     a {
       font-size: 30px !important;
       color: #0078d4;
@@ -71,6 +80,25 @@ export const About__left = styled.div`
       &:hover {
         color: #212121;
         transition: all 300ms ease-out;
+      }
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: var(--blue-bg);
+    }
+    .info {
+      margin-bottom: 10px;
+      margin-left: 10px;
+      span:first-child {
+        font-size: 12px;
+        font-weight: 800;
+        opacity: 0.8;
+      }
+      span:last-child {
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--blue-bg);
       }
     }
     @media screen and (max-width: 820px) {
@@ -107,12 +135,15 @@ export const About__content = styled.div`
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(25px);
+    animation: animate 10s linear infinite;
+
     h1 {
       color: var(--blue-bg);
     }
     &:nth-child(1) {
       margin-bottom: 20px;
     }
+
     &:nth-child(1),
     &:nth-child(2) {
       display: flex;
@@ -157,6 +188,15 @@ export const About__content = styled.div`
     @media screen and (max-width: 800px) {
       width: 100%;
       margin-bottom: 20px;
+    }
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      transform: translateY(40px);
+    }
+    50% {
+      transform: translateY(-40px);
     }
   }
 `;
