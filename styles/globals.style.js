@@ -14,6 +14,13 @@ const GlobalStyle = createGlobalStyle`
   --secondary-bg:#2488d8;
   --light-bg:#106ebe;
   --text-color:#eee;
+  --input-bg:#fcfcfc;
+  --primary-color-500:#9978c5;
+  --primary-color-600:#350870;
+  --primary-color-700:#5d20ad;
+  --primary-color-800:#4500a0;
+  --secondary-color-500:rgba(154,153,156,1);
+  --secondary-color-600:rgba(177,177,177,1);
 }
 html,body{
   background-color:whitesmoke;
